@@ -1,0 +1,9 @@
+.vscode/
+.idea/
+.gradle/
+# Build and bin folders
+app/bin/
+app/build/
+buildSrc/.gradle/
+buildSrc/build/
+app/target/
