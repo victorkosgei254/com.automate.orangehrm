@@ -12,5 +12,15 @@ using the following tools
 The first step was to setup project stucture as follows 
 <img src="img/folder.png" width="auto" height="auto" />
 
-Concerning the Java Codes for test this is the setup I employ 
+Code setup for test:
 <img src="img/TestSetup.png"/>
+
+I wrote a custom gradle plugin that will be used to run custom 
+test based on their annotations, this will be really helpful when it 
+comes to CI 
+
+to run custom test use 
+
+```gradle automaton --runTests "@all or @network "```
+
+Here @testType represent the test to be run, multiple test can be chained using or statements.
