@@ -3,6 +3,7 @@
 Feature: Unit Test Login OrangeHRM Dashboard
 
     Feature This test validates that given a valid user name and password the user should successfully login
+    @testOne
     Scenario: Navigate to OrangeHRM Website
         * User navigates to "orangehrmURL"
         * User should see a login screen with a logo "logoImage"
@@ -74,3 +75,8 @@ Feature: Unit Test Login OrangeHRM Dashboard
     Scenario: Verify the website is served via HTTPS
         * The website should be serves over https
 
+
+      @security
+      Scenario: Verify that the page has an embeded CSRF Token
+        * The page should contain a "csrf" token
+        * The token should be hidden
