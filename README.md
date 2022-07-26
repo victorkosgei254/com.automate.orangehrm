@@ -11,3 +11,6 @@ using the following tools
 
 The first step was to setup project stucture as follows 
 <img src="img/folder.png" width="auto" height="auto" />
+
+Concerning the Java Codes for test this is the setup I employ 
+<img src="img/TestSetup.png"/>
